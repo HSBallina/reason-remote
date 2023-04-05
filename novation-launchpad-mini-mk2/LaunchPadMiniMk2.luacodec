@@ -1,0 +1,18 @@
+version = {0, 0, 1}
+function remote_supported_control_surfaces()
+    local surfaces = {{
+        manufacturer = "Novation",
+        model = "LaunchPad Mini Mk2",
+        source = "LaunchPadMiniMk2.lua",
+        picture = "LaunchPadMiniMk2.jpg",
+        in_ports = {{
+            description = "In Port"
+        }},
+        out_ports = {{
+            description = "Out Port",
+            optional = true
+        }},
+        has_keyboard = true
+    }}
+    return surfaces
+end
